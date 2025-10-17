@@ -1,17 +1,25 @@
+import CVUploader from '@/components/CVUploader'
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-12">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto text-center">
           
-          {/* Hero */}
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">
-            AI HR Screening Agent
-          </h1>
-          <p className="text-xl text-gray-600 mb-12">
-            Reduce timpul de screening cu 85%. 
-            Agent AI care scanează CV-uri și face pre-interviuri automate.
-          </p>
+          {/* Header */}
+          <div className="container mx-auto px-4 mb-8">
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="text-4xl font-bold text-gray-900 mb-2">
+                AI HR Screening Agent
+              </h1>
+              <p className="text-gray-600">
+                Demo: Upload CV → Extrage text automat
+              </p>
+            </div>
+          </div>
+
+          {/* CV Uploader */}
+          <CVUploader />
           
           {/* Features */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -62,9 +70,9 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Footer */}
-          <div className="mt-12 text-gray-500 text-sm">
-            <p>Building in public • Day 1/30</p>
+           {/* Footer */}
+          <div className="mt-12 text-center text-gray-500 text-sm">
+            <p>Building in public • Day 2/30 • Powered by AugmenterOS</p>
           </div>
 
         </div>
